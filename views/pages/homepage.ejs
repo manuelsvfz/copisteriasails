@@ -1,0 +1,91 @@
+<!--
+This is your default homepage.
+For more information, see:
+• https://sailsjs.com/documentation/concepts/views
+• https://sailsjs.com/documentation/concepts/routes
+-->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script defer src="../../assets/js/code.js"></script>
+<link rel="stylesheet" href="../../assets/styles/style.css">
+
+<style>
+  .row {
+    margin-left: 10px;
+  }
+
+  .tinta {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 5px;
+  }
+</style>
+
+
+<div class="container">
+  <!--<div class="jumbotron">
+<h1>Copisteria Julian</h1>
+<p>Usa la impresora que mejor te vaya!</p>
+</div>-->
+  <div class="row">
+    <h3>Hojas:1</h3>
+    <p>Introduce la impresora el texto a imprimir</p>
+    <form class="form-inline" action="index.php" method="get" role="form">Impresora: <select class="form-control"
+        id="idImpresora" name="n_impresora">
+        <option value="0">Impresora0</option>
+        <option value="1">Impresora1</option>
+        <option value="2">Impresora2</option>
+      </select></form>
+  </div><textarea class="form-control" id="info" rows="4" name="texto"></textarea><input id="enviar" type="submit"
+    value="Enviar a impresora" />
+</div>
+<div class="row">
+  <div class="col-sm-4" id="printer0">
+    <div class="row"><a id="imprimir0" href="#"><img src="" alt="Procesa cola" /></a></div>
+    <div class="row">
+      <div class="toner">
+        <div class="tinta negro" style="background-color:black">100%</div>
+        <div class="tinta amarillo" style="background-color:yellow">100%</div>
+        <div class="tinta cyan" style="background-color:cyan">100%</div>
+        <div class="tinta magenta" style="background-color:magenta">100%</div>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="list-group"></ul>
+    </div><button id="rellenar0">Rellenar</button>
+  </div>
+  <div class="col-sm-4" id="printer1">
+    <div class="row"><a id="imprimir1" href="#"><img src="" alt="Procesa cola" /></a></div>
+    <div class="row">
+      <div class="toner">
+        <div class="tinta negro" style="background-color:black">100%</div>
+        <div class="tinta amarillo" style="background-color:yellow">100%</div>
+        <div class="tinta cyan" style="background-color:cyan">100%</div>
+        <div class="tinta magenta" style="background-color:magenta">100%</div>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="list-group"></ul>
+    </div><button id="rellenar1">Rellenar</button>
+  </div>
+  <div class="col-sm-4" id="printer2">
+    <div class="row"><a id="imprimir2" href="#"><img src="" alt="Procesa cola" /></a></div>
+    <div class="row">
+      <div class="toner">
+        <div class="tinta negro" style="background-color:black">100%</div>
+        <div class="tinta amarillo" style="background-color:yellow">100%</div>
+        <div class="tinta cyan" style="background-color:cyan">100%</div>
+        <div class="tinta magenta" style="background-color:magenta">100%</div>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="list-group"></ul>
+    </div><button id="rellenar2">Rellenar</button>
+  </div>
+</div>
